@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background-color: #ffffff;
+  background-color: #aaaaaa;
   padding: 60px;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -218,6 +218,14 @@ footer {
 }
 
 .button-hover:hover {
-  background-color: #006666; /* Darker Teal */
+  background-color: green; 
   transform: translateY(-2px);
+}
+
+/* new code */
+
+h2 {
+  border-bottom: 2px solid #008080;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
 }
