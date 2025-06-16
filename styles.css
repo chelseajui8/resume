@@ -1,8 +1,12 @@
- * {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   transition: all 0.3s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -56,10 +60,12 @@ section {
   margin: 0 auto;
 }
 
+/* Changed h3 color from white to navy */
 section h3 {
   font-size: 32px;
   margin-bottom: 18px;
-  color: #ffffff;
+  color: #2A2E57; /* navy blue */
+  cursor: default;
 }
 
 ul {
@@ -218,14 +224,38 @@ footer {
 }
 
 .button-hover:hover {
-  background-color: green; 
+  background-color: green;
   transform: translateY(-2px);
 }
 
-/* new code */
-
+/* Section Headers Underline */
 h2 {
   border-bottom: 2px solid #008080;
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
+}
+
+/* New top banner that blends with header */
+.top-banner {
+  display: block;
+  background-color: #2A2E57; /* navy blue */
+  color: transparent; /* hidden text initially */
+  text-align: center;
+  padding: 15px 0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  user-select: none;
+  font-weight: 600;
+  font-size: 20px;
+  border-bottom: 2px solid #008080; /* teal border */
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.top-banner:hover,
+.top-banner:focus {
+  color: #66c2cc; /* light teal */
+  cursor: pointer;
+  outline: none;
 }
